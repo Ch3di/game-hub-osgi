@@ -1,0 +1,13 @@
+package snake;
+
+import gameApi.GameInterface;
+
+public class SnakeGame implements GameInterface {
+
+	@Override
+	public void launchGame() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

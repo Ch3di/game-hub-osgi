@@ -1,0 +1,168 @@
+package gamecenterserver;
+
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JRootPane;
+
+
+public class GameCenterMenu extends JFrame {
+
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public GameCenterMenu() {
+		try {
+			URL quitUrl = new URL("https://i.ibb.co/HpwvHTL/game.png");
+			setIconImage(Toolkit.getDefaultToolkit().getImage(quitUrl));
+			initialize();
+		} catch (MalformedURLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+	}
+
+	/**
+	 * Initialize the contents of the this.
+	 */
+	private void initialize() {
+		
+		this.setResizable(false);
+		this.setBounds(600, 200, 970, 629);
+		this.setUndecorated(true);
+		this.getRootPane().setWindowDecorationStyle(JRootPane.NONE);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.getContentPane().setLayout(null);
+		
+		JButton quit = new JButton("");
+		
+		try {
+			URL quitUrl = new URL("https://i.ibb.co/SJ8F60P/quit2.png");
+			quit.setIcon(new ImageIcon(quitUrl));
+		} catch (MalformedURLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		quit.setIcon(new ImageIcon(GameCenter.class.getResource("/tp1/quit2.png")));
+		quit.setBounds(936, 0, 33, 33);
+		quit.setBorderPainted(false);
+		quit.setOpaque(false);
+		quit.setContentAreaFilled(false);
+		quit.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				dispose();
+			}
+		});
+		
+		
+		
+		this.getContentPane().add(quit);
+		
+
+		
+		JButton skillMeter = new JButton("");
+		
+		try {
+			URL sokobanUrl = new URL("https://i.ibb.co/m6hDpZZ/sokoban.jpg");
+			skillMeter.setIcon(new ImageIcon(sokobanUrl));
+		} catch (MalformedURLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		skillMeter.setBorderPainted(false);
+		skillMeter.setOpaque(false);
+		skillMeter.setContentAreaFilled(false);
+		skillMeter.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+//				dispose();
+//				Catchme I=new Catchme();
+//				I.setVisible(true);
+			}
+		});
+		skillMeter.setBounds(100, 220, 208, 297);
+		this.getContentPane().add(skillMeter);
+		
+		JButton demin = new JButton("");
+		demin.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+//				dispose();
+//				Acceuil2 I=new Acceuil2();
+//				I.setVisible(true);
+			}
+		});
+		
+		try {
+			URL tetrisUrl = new URL("https://i.ibb.co/4P8tLwT/tetris.jpg");
+			demin.setIcon(new ImageIcon(tetrisUrl));
+		} catch (MalformedURLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		demin.setIcon(new ImageIcon(GameCenter.class.getResource("/tp1/d\u00E9min.png")));
+		demin.setOpaque(false);
+		demin.setContentAreaFilled(false);
+		demin.setBorderPainted(false);
+		demin.setBounds(400, 220, 208, 297);
+		this.getContentPane().add(demin);
+		
+		JButton paint = new JButton("");
+		paint.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+//				dispose();
+//				new InputWH();
+			}
+		});
+		
+		try {
+			URL snakeUrl = new URL("https://i.ibb.co/2Krj2n3/snake-game.jpg");
+			paint.setIcon(new ImageIcon(GameCenter.class.getResource(snakeUrl)));
+		} catch (MalformedURLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		
+		
+		paint.setOpaque(false);
+		paint.setContentAreaFilled(false);
+		paint.setBorderPainted(false);
+		paint.setBounds(680, 220, 208, 297);
+		this.getContentPane().add(paint);
+		JLabel lblNewLabel = new JLabel("");
+		
+		try {
+			URL gameCenterUrl = new URL("https://i.ibb.co/p3J2JwC/game-Centers.png");
+			lblNewLabel.setIcon(new ImageIcon(gameCenterUrl));
+		} catch (MalformedURLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		
+		lblNewLabel.setBounds(0, 0, 980, 629);
+		this.getContentPane().add(lblNewLabel);
+	}
+
+}

@@ -1,0 +1,13 @@
+package sokoban;
+
+import gameApi.GameInterface;
+
+public class SokobanGame implements GameInterface {
+
+	@Override
+	public void launchGame() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

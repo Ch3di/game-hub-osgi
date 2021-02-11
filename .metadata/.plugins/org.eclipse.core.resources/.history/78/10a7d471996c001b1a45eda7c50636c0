@@ -1,0 +1,5 @@
+package gameCenter;
+
+public interface GameCenterServerAPI {
+	public void runServer();
+}

@@ -1,0 +1,13 @@
+package tetris;
+
+import gameApi.GameInterface;
+
+public class TetrisGame implements GameInterface {
+
+	@Override
+	public void launchGame() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

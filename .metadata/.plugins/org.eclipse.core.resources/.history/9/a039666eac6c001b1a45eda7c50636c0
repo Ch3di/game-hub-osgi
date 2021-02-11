@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: GameCenterServer
+Bundle-SymbolicName: GameCenterServer
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: gamecenterserver.GameCenter
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Import-Package: javax.swing,
+ org.osgi.framework;version="1.3.0",
+ org.osgi.util.tracker;version="1.5.2"
+Automatic-Module-Name: GameCenterServer
+Require-Bundle: GameCenterServerAPI;bundle-version="1.0.0",
+ GameAPI;bundle-version="1.0.0"
+Export-Package: gamecenterserver
