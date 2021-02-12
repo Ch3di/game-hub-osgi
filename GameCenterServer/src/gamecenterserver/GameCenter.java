@@ -23,7 +23,6 @@ public class GameCenter implements BundleActivator, ServiceListener, GameCenterS
 	@Override
 	public void start(BundleContext context) throws Exception {
 		System.out.println("\n[*] Registering Game Center Service...");
-		leContext = context;
 		context.addServiceListener(this);
 		Properties props = new Properties();
 		props.put("Language", "English");
