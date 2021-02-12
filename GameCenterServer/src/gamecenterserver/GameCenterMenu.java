@@ -47,7 +47,7 @@ public class GameCenterMenu extends JFrame {
 	 */
 	public GameCenterMenu() {
 		try {
-			URL gameUrl = new URL("https://i.ibb.co/HpwvHTL/game.png");
+			URL gameUrl = new URL("https://raw.githubusercontent.com/Ch3di/images/main/game.png");
 			setIconImage(Toolkit.getDefaultToolkit().getImage(gameUrl));
 			
 		} catch (MalformedURLException e1) {
@@ -72,7 +72,7 @@ public class GameCenterMenu extends JFrame {
 		JButton quit = new JButton("");
 		
 		try {
-			URL quitUrl = new URL("https://i.ibb.co/SJ8F60P/quit2.png");
+			URL quitUrl = new URL("https://raw.githubusercontent.com/Ch3di/images/main/quit2.png");
 			quit.setIcon(new ImageIcon(quitUrl));
 		} catch (MalformedURLException e1) {
 			// TODO Auto-generated catch block
@@ -99,7 +99,7 @@ public class GameCenterMenu extends JFrame {
 		JButton sokoban = new JButton("");
 		
 		try {
-			URL sokobanUrl = new URL("https://i.ibb.co/QJxqkW6/sokoban2.jpg");
+			URL sokobanUrl = new URL("https://raw.githubusercontent.com/Ch3di/images/main/sokoban.jpg");
 			sokoban.setIcon(new ImageIcon(sokobanUrl));
 		} catch (MalformedURLException e1) {
 			// TODO Auto-generated catch block
@@ -146,7 +146,7 @@ public class GameCenterMenu extends JFrame {
 		});
 		
 		try {
-			URL tetrisUrl = new URL("https://i.ibb.co/nCWTMnd/tetris1.jpg");
+			URL tetrisUrl = new URL("https://raw.githubusercontent.com/Ch3di/images/main/tetris.jpg");
 			tetris.setIcon(new ImageIcon(tetrisUrl));
 		} catch (MalformedURLException e1) {
 			// TODO Auto-generated catch block
@@ -178,7 +178,7 @@ public class GameCenterMenu extends JFrame {
 		});
 		
 		try {
-			URL snakeUrl = new URL("https://i.ibb.co/99kCfPx/snake-game1.jpg");
+			URL snakeUrl = new URL("https://raw.githubusercontent.com/Ch3di/images/main/snake-game.jpg");
 			snake.setIcon(new ImageIcon(snakeUrl));
 		} catch (MalformedURLException e1) {
 			// TODO Auto-generated catch block
@@ -195,7 +195,7 @@ public class GameCenterMenu extends JFrame {
 		JLabel lblNewLabel = new JLabel("");
 		
 		try {
-			URL gameCenterUrl = new URL("https://i.ibb.co/p3J2JwC/game-Centers.png");
+			URL gameCenterUrl = new URL("https://raw.githubusercontent.com/Ch3di/images/main/game-Centers.png");
 			lblNewLabel.setIcon(new ImageIcon(gameCenterUrl));
 		} catch (MalformedURLException e1) {
 			// TODO Auto-generated catch block
