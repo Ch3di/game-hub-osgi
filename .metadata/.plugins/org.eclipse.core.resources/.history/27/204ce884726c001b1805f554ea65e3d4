@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: GameAPI
-Bundle-SymbolicName: GameAPI
-Bundle-Version: 1.0.0.qualifier
-Automatic-Module-Name: GameAPI
-Bundle-RequiredExecutionEnvironment: JavaSE-11
-Export-Package: gameApi

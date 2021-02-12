@@ -1,5 +1,0 @@
-package gameApi;
-
-public interface GameInterface {
-
-}
